@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Title -->
+	<title>Basics</title>
+
+	<!-- For mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/book.png" type="image/x-icon">
+
+	<!-- Favicon for IPhone -->
+	<link rel="apple-touch-icon" href="img/book.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/book.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/book.png">
+
+	<!-- SEO -->
+	<meta name="description" content="Test web page">
+	<meta name="keywords" content="html, css, js">
+	<meta name="author" content="Denys Kovzikov">
+
+	<!-- Use latest version of IE -->
+	<meta http-equiv="X-UA_Compatible" content="IE=edge">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="">
+
+	<!-- Fonts 'Roboto Slab' -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="min-height: 500vh">
+
+	<!--Text-->
+	<h1><strong><big>Different</big> <small>Headings</small></strong></h1>
+	<h3><tt><em>Different</em> <s>Headings</s></tt></h3>
+	<q>Hello, World!</q>
+	<hr>
+
+	<code>
+		int apples = 30;
+		int eggs = 5;
+		if(apples < 10) {
+		apples += 5;
+		};
+	</code>
+
+	<br>
+
+	<pre>
+	<code>
+		int apples = 30;
+		int eggs = 5;
+		if(apples < 10) {
+		apples += 5;
+		};
+	</code>
+	</pre>
+
+	<h2>H<sub>2</sub>O</h2>
+	<h2>x<sup>2</sup> = 9</h2>
+	<hr>
+
+
+	<!--List-->
+	<ul>
+		<li>Front-end</li>
+		<ol>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+		</ol>
+		<li>Back-end</li>
+		<li>Full-stack</li>
+	</ul>
+
+	<ol start="6" reversed>
+		<li>Front-end</li>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+		</ul>
+		<li>Back-end</li>
+		<li>Full-stack</li>
+	</ol>
+
+	<dl>
+		<dt>Front-end Developer</dt>
+		<dd>It's a person who works with the visible part of website.</dd>
+	</dl>
+	<hr>
+
+
+	<!--Images-->
+	<img src="img/book.png" alt="Book" width="150px" height="150px">
+	<br>
+	<picture>
+		<source media="(min-width: 1024px)" srcset="http://forums.crackberry.com/attachments/blackberry-q10-f272/171886d1371181552t-bbm-display-picture-limitations-423341110329_qy737vid_l.jpg">
+		<source media="(min-width: 768px)" srcset="https://i.imgur.com/N2Fd2ifh.jpg">
+		<img src="https://img0.liveinternet.ru/images/attach/b/0/15070/15070703_53d091471f48.gif" alt="">
+	</picture>
+
+	<figure>
+		<img src="https://img0.liveinternet.ru/images/attach/b/0/15070/15070703_53d091471f48.gif" alt="">
+		<figcaption>Spong Bob is laughing</figcaption>
+	</figure>
+	<hr>
+
+
+
+	<!--Table-->
+	<table border="2px solid #000" font-size>
+		<caption>School marks</caption>
+		<thead>
+			<tr>
+				<th>Math</th>
+				<th>Marks</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>First</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>Second</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>third</td>
+				<td>5</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">Average: 7</td>
+			</tr>
+		</tfoot>
+	</table>
+	<hr>
+
+
+	<!--Links & Buttons-->
+	<a href="../Sources.txt" target="_blank" >Open text</a>
+	<a href="http://glinchak.com/download/file.php?avatar=975_1341401573.jpg" download target="_blank">Download image</a>
+	<a href="../CSS Basics/basicsCSS.html" target="_blank">Basics CSS</a>
+	<button type="button" autofocus>Click here</button>
+	<button type="button" disabled>Don't touch me</button>
+	<hr>
+
+
+	<!--Useful Tags-->
+	<marquee style="color:#0ff; background-color: #111" >Hellooo, these are "Useful Tags"</marquee>
+
+	<h2>To know <abbr title="HyperText Markup Language">HTML</abbr> <mark>semantic</mark> is important</h2>
+
+	<br>
+	<div>
+		<input list="list">
+		<datalist id="list">
+			<option value="Front-end"></option>
+			<option value="Back-end"></option>
+			<option value="Full-stack"></option>
+		</datalist>
+	</div>
+
+	<br>
+
+	<meter value="61" max="100" low="70" high="100"></meter>
+	<progress value="25" max="100"></progress>
+
+	<noscript>Please switch on scripts in your browser!</noscript>
+
+	<canvas id="example" width="200" height="200">
+		<script type="text/javascript">
+			const drawingCanvas = document.getElementById('example');
+			if (drawingCanvas && drawingCanvas.getContext) {
+				const context = drawingCanvas.getContext('2d');
+				context.fillStyle = "#000";
+				context.beginPath();
+				context.arc(100, 100, 100, 0, Math.PI*2, true);
+				context.closePath();
+				context.stroke();
+				context.fill();
+			}
+		</script>
+	</canvas>
+
+
+
+	<!--Global Site Structure-->
+	<header>
+		<h1>Header</h1>
+	</header>
+	<aside class="side-left">
+		Left Side
+	</aside>
+	<main>
+		<section>
+			<article class="article-first">
+				First article
+			</article>
+			<article class="article-second">
+				Second article
+			</article>
+		</section>
+	</main>
+	<aside class="side-right">
+		Right Side
+	</aside>
+	<footer>
+		Footer
+	</footer>
+
+
+
+	<!--Form-->
+	<form name="form" action="index.html" autocomplete="on">
+		<fieldset>
+			<legend>Form</legend>
+			<label for="username">Your name:</label>
+			<input type="text" id="username">
+			<br>
+			<label for="password">your password:</label>
+			<input type="password" id="password">
+			<br>
+			<label for="message">Your comment:</label>
+			<textarea id="message" name="text" rows="8" cols="50"></textarea>
+		</fieldset>
+	</form>
+	<textarea rows="5" cols="20" autofocus></textarea>
+	<textarea rows="5" cols="20" disabled></textarea>
+	<textarea rows="5" cols="20" readonly>This text can't change</textarea>
+	<textarea rows="5" cols="20" placeholder="your message"></textarea>
+	<textarea rows="5" cols="20" maxlength="8"></textarea>
+	<textarea rows="5" cols="20" required></textarea>
+	<br>
+	<select>
+		<option value="Front-end">Front-end</option>
+		<option value="Back-end" label="Back-end"></option>
+		<option value="sel" selected>Selected</option>
+		<option value="dis" disabled>Disabled</option>
+	</select>
+	<br>
+	<select multiple>
+		<optgroup label="front">
+			<option>Front-end</option>
+			<option>Full-stack</option>
+		</optgroup>
+		<optgroup label="back">
+			<option>Back-end</option>
+			<option>Full-stack</option>
+		</optgroup>
+	</select>
+	<br>
+
+	<!--Input Types-->
+	<input type="text" name="" value="" placeholder="text" autofocus>
+	<br>
+	<input type="text">
+	<br>
+	<input type="number">
+	<br>
+	<input type="number" min="0" max="20" step="2">
+	<br>
+	<input type="pasword">
+	<br>
+	<input type="range">
+	<br>
+	<input type="date">
+	<br>
+	<input type="color">
+	<br>
+	<input type="submit">
+	<br>
+	<input type="reset" value="Reset">
+	<br>
+	<input type="email">
+	<br>
+	<input type="url">
+	<br>
+	<input type="image" src="https://picsum.photos/300/300" alt="beautiful picture">
+	<br>
+
+	<input type="text" list="list">
+	<datalist id="list">
+		<option value="Front-end"></option>
+		<option value="Back-end"></option>
+		<option value="Full-stack"></option>
+	</datalist>
+
+	<br>
+	<input type="search">
+	<br>
+	<input type="datetime">
+	<br>
+	<input type="datetime-local">
+	<br>
+	<input type="month">
+	<br>
+	<input type="time">
+	<br>
+	<input type="week">
+	<br>
+	<input type="hidden" value="Denys">
+	<br>
+	<input type="file">
+	<br>
+	<input type="file" multiple accept="text/html">
+	<br>
+	<label>
+		<input type="radio" name="Language" value="Front-end">Front-end
+	</label>
+	<br>
+	<label>
+		<input type="radio" name="Language" value="Back-end">Back-end
+	</label>
+	<br>
+	<label>
+		<input type="radio" name="Language" value="Full-stack">Full-stack
+	</label>
+	<br>
+	<label>
+		<input type="checkbox" name="JS" checked>JS
+	</label>
+	<br>
+	<label>
+		<input type="checkbox" name="Python">Python
+	</label>
+	<br>
+	<label>
+		<input type="checkbox" name="C++">C++
+	</label>
+	<hr>
+
+	<!--Video & Audio-->
+	<video controls  autoplay loop muted preload="auto" poster="img/book.png">
+		<source src="img/world.mp4" type="video/mp4">
+	</video>
+	<audio controls>
+		<source src="img/Yesterday.mp3" type="audio/mp3">
+	</audio>
+
+	<!--Common & Useful Attributes-->
+	<h1 title="Hello, World!" id="heading" style="color: #00fdfd;" lang="en" contenteditable="true" spellcheck="true">Simple Text</h1>
+	<p class="text idea" dir="rtl" lang="gr">Simple Text</p>
+
+	<input type="text" placeholder="name" value="" tabindex="2">
+	<br>
+	<input type="password" placeholder="pass" value="" tabindex="1">
+	<br>
+	<input type="button" value="Sumbit" tabindex="3">
+	<br>
+
+</body>
+</html>

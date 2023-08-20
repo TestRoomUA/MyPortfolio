@@ -1,0 +1,393 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: linear-gradient(-30deg, #39BAE8, #0000A1);
+	min-height: 100vh;
+	font-family: 'Comfortaa';
+	transition: .1s;
+}
+
+body::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(20% at 5% 25%);
+	background: linear-gradient(30deg, #1F6ED4, #B9EDF8);
+	transition: .5s;
+	animation: firstCircle 25s ease-in-out infinite;
+}
+
+body::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(30% at 95% 70%);
+	background: linear-gradient(-30deg, #0000A1, #1F6ED4);
+	transition: .5s;
+	animation: secondCircle 25s ease-in-out infinite;
+}
+
+
+@keyframes firstCircle{
+	0%,100%{
+	clip-path: circle(20% at 5% 25%);
+	}
+	50%{
+	clip-path: circle(20% at 5% 70%);
+	}
+}
+
+@keyframes secondCircle{
+	0%,100%{
+	clip-path: circle(30% at 95% 70%);
+	}
+	50%{
+	clip-path: circle(30% at 95% 10%);
+	}
+}
+
+/*DARK THEME*/
+
+
+body.darkTheme{
+	background: linear-gradient(-30deg, #000, #0000A1);
+	color: #fff;
+}
+
+body.darkTheme .mainblock{
+	background-color: rgba(0, 0, 0, 0.2);
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+}
+
+body.darkTheme:before{
+	background: linear-gradient(30deg, #006fff, #000000);
+}
+
+body.darkTheme .uppercase{
+	background-color: transparent;
+}
+
+body.darkTheme .far, 
+body.darkTheme .fas{
+	color: #fff;
+}
+
+
+/**/
+
+
+.uppercase{
+	padding: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-style: italic;
+	background-color: #fff;
+	transition: background-color .5s;
+}
+
+.logo{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	height: 100px;
+	width: 100px;
+	opacity: 0.8;
+}
+
+
+
+.mainblock{
+	z-index: 1;
+	min-height: 750px;
+	width: 100%;
+	max-width: 1400px;
+	padding: 2.5em;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	backdrop-filter: blur(15px);
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transition: .5s;
+}
+
+.mainblock .info{
+	max-width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mainblock .logoes{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.mainblock .info .logo{
+	position: relative;
+	height: 250px;
+	width: 250px;
+	margin: 25px 0;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+
+.mainblock .AvTeLogo{
+	height: 150px;
+}
+
+.mainblock .info .title{
+	font-size: 3em;
+}
+
+.mainblock .info .text{
+	margin: 2.5em 0 4em;
+}
+
+.mainblock .buttons{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.mainblock .btn{
+	text-decoration: none;
+	color: #000;
+	font-size: 2em;
+	padding: 0.5em 1.3em 0.5em 1.3em;
+	border-radius: 0.5em;
+	background-color: #75D4F2;
+	border: 3px solid #fff;
+	border-bottom: 0.3em solid #fff;
+	transition: 0.2s;
+	color: #fff;
+}
+
+.mainblock .btn:hover{
+	background-color: #52BDF2;
+}
+
+.mainblock .btn:active{
+	border-bottom: 3px solid #fff;
+	border-style: dashed;
+}
+
+.mainblock .btn:nth-child(1){
+	background-color: #0088cc;
+}
+
+.mainblock .btn:nth-child(2){
+	background-color: #597da3;
+}
+
+.mainblock .btn:nth-child(1) .fab{
+	margin-right: 10px;
+	color: #fff;
+}
+
+.mainblock .btn:nth-child(2) .fab{
+	margin-right: 10px;
+	color: #fff;
+}
+
+
+/*benefits*/
+
+
+
+.mainblock .box{
+
+}
+
+.mainblock .benefits{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mainblock .benefits .point{
+	list-style: none;
+	font-size: 1.5em;
+}
+
+.mainblock .benefits .title{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.mainblock .benefits .icon{
+	margin-right: 15px;
+}
+
+.far, .fas{
+	color: #111;
+	transition: 0.5s;
+}
+
+
+
+/*DARK/LIGHT THEME*/
+
+
+
+.toggle{
+/*	@include cc;*/
+	overflow: visible;
+	text-align: right;
+}    
+.toggle input{
+	display: none;
+}
+    
+.toggle input:checked ~ span{
+    border-color: #333;
+    background: #2c4e63;
+}
+
+.toggle input:checked ~ span:before {
+		left: 5.5rem;
+        box-shadow: inset -1rem 0rem 0 0.25rem #ffc207;
+        background: transparent;
+}
+
+.toggle input:checked ~ span:after {
+        content: '\002605';
+        top: 1rem;
+        left: 5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        color: #ffc207;
+}
+    
+.toggle span{
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 10.5rem;
+      height: 5.5rem;
+      border-radius: 5rem;
+      border: 0.25rem solid #666;
+      background: #5197c4;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.toggle span:before{
+        content: '';
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-shadow: inset -4rem -4rem 0 0 #ffc207;
+        transition: all 0.5s cubic-bezier(0, 0.55, 0.45, 1);
+      }
+.toggle span:after{
+        content: '\002601';
+        position: absolute;
+        top: 1rem;
+        left: 1.75rem;
+        width: 1rem;
+        height: 1rem;
+        color: #fff;
+        font-size: 4rem;
+        transition: all 0.5s cubic-bezier(0, 0.55, 0.45, 1);
+      }
+
+
+
+
+
+/*
+$white: #fff;
+$black: #000;
+$lightGrey: #666;
+$mediumGrey: #444;
+$darkGrey: #333;
+$lightBlue: #5197c4;
+$darkBlue: #2c4e63;
+$purple: #27173a;
+$yellow: #ffc207;
+$font: "Open Sans", sans-serif;
+*/
+
+
+/*MOBILE VERSION*/
+
+@media screen and (max-width: 1024px){
+	body{
+		background: #1F6ED4;
+	}
+
+	body::before,
+	body::after{
+		display: none;
+	}
+
+	body>.logo{
+		display: none;
+	}
+
+	.mainblock{
+		min-height: 0;
+		height: 100%;
+		max-width: 1400px;
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+		display: block;
+		backdrop-filter: blur(15px);
+		box-shadow: none;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 0;
+		border: 1px solid #fff;
+	}
+
+	.mainblock .info{
+		max-width: 50%;
+		height: 100%;
+		display: block;
+	}
+
+	.mainblock .info .logoes{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.mainblock .AvTeLogo{
+		display: none;
+	}
+
+	.mainblock .info .logo{
+		height: 150px;
+		width: 150px;
+	}
+
+
+}

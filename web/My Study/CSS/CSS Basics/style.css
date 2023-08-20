@@ -1,0 +1,478 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 500vh;
+  background-image: repeating-linear-gradient(45deg, yellow 40px, transparent 40px, transparent 80px, yellow 80px, yellow 120px, transparent 120px), repeating-radial-gradient(circle closest-side, aqua 20px, red 80px);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.first .container .title{
+  font-size: 2em;
+}
+
+.container .title > .link{
+  color: red;
+}
+
+.container .title + .title{
+  text-transform: uppercase;
+}
+
+br ~ .title{
+  font-style: italic;
+}
+
+.first a[target] {
+  text-decoration: none;
+}
+
+.first a[target="_blank"] {
+  background-color: #ff0;
+}
+
+.first a[href^="https://"]:hover{
+  border: 3px solid blue;
+}
+
+.first a[href$="Family"]{
+  color: #f0f;
+}
+
+.first a[href*="Friend"]{
+  letter-spacing: 15px;
+}
+
+/*Pseudo-elements & Pseudo-classes*/
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.second a:hover{
+  color: red;
+}
+
+.second a:active{
+  color: green;
+}
+
+.second a:visited{
+  color: aqua;
+}
+
+.second a:focus{
+  font-weight: bold;
+}
+
+.second a::before{
+  content: "Hello"
+}
+
+.second a::after{
+  content: "How are you?"
+}
+
+.second p::first-letter{
+  font-size: 40px;
+}
+
+.second p::first-line{
+  text-decoration: underline;
+}
+
+.second p::selection{
+  background-color: yellow;
+  color: red;
+}
+
+.list1 li:nth-child(even){
+  color: orange;
+}
+
+.list1 li:nth-child(odd){
+  color: green;
+}
+
+.list1 li:first-child{
+  color: blue;
+}
+
+.list1 li:last-child{
+  color: red;
+}
+
+.list2 li:nth-child(2){
+  color: pink;
+}
+
+.list2 li:nth-child(3n){
+  text-transform: uppercase;
+}
+
+.list2 li:nth-child(3n + 1){
+  border: 1px solid black;
+}
+
+.text span:first-of-type{
+  color: red;
+}
+
+.text span:last-of-type{
+  color: green;
+}
+
+.text span:nth-of-type(2){
+  border: 2px dotted blue;
+}
+
+.list3 li:not(.item){
+  text-decoration: line-through;
+  border: 2px solid red;
+}
+
+/*Cascading & Inheritance*/
+.third{
+  color: red !important; /*don't Use !important*/
+  border: 1px solid blue;
+  margin-bottom: 30px;
+}
+
+.third .title{
+  border: inherit;
+  margin: inherit;
+}
+
+.third h1{
+  line-height: 50px;
+  text-align: center;
+  color: black;
+}
+
+.third p{
+  text-align: justify;
+  text-indent: 20px;
+  color: darkblue;
+}
+
+.third p::first-letter{
+  font-size: 2em;
+  color: red;
+  font-family: monospace;
+}
+
+.fourth .List li{
+  /*list-style-type: upper-roman;*/
+  /*list-style-type: circle;*/
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  /*list-style-image: url(img/AizLF.png);*/
+
+}
+
+.wrapper{
+
+  width: 700px;
+  margin: 0 auto;
+  border: 5px solid #222;
+  /*overflow: hidden;*/
+}
+
+.image4k {
+  display: block;
+  width: 100%;
+
+  transition: all 1s ease;
+  transform-origin: 50px 150px;
+}
+
+.image4k:hover{
+  /*filter: blur(15px);*/
+  /*filter: drop-shadow(5px 5px 5px rgba(0, 10, 10, 1));*/
+  /*filter: grayscale(80%);*/
+  /*filter: brightness(150%);*/
+  /*filter: contrast(150%);*/
+  filter: hue-rotate(150deg);
+  /*filter: invert(100%);*/
+  /*filter: saturate(300%);*/
+  /*filter: sepia(100%);*/
+  /*filter: opacity(50%);*/
+  /*filter: *filter-link* */
+}
+
+.image4k:active{
+  /*transform: rotate(180deg);*/
+  /*transform: scale(0.2, 1.2);*/
+  /*transform: scaleX(1.5);*/
+  /*transform: translate(50px, 80px);*/
+  /*transform: translateX(70px);*/
+  /*transform: skew(21deg, 25deg);*/
+  transform: rotate(10deg) scale(1.2) skew(10deg);
+}
+
+
+.transitionLsn{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.transitionLsn .box{
+  width: 250px;
+  height: 250px;
+  border: 4px solid #111;
+  background-color: aqua;
+
+  /*transition-duration: 0.5s, 1.5s;
+  transition-property: transform, background-color;
+  transition-delay: 1s, 0s;
+  transition-timing-function: linear;*/
+  transition: all 1s ease 0.5s;
+
+  /*animation-name: Animation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;*/
+  animation: AnimationColor 5s linear infinite forwards, AnimationSize 1.5s linear infinite;
+}
+
+.transitionLsn .box:hover{
+  background-color: red;
+  transform: scale(1.2);
+  animation-play-state: running, paused;
+}
+
+
+@keyframes AnimationColor {
+  from, to{ background-color: yellow; }
+
+  30%{ background-color: red; }
+
+  60%{ background-color: blue; }
+}
+
+@keyframes AnimationSize {
+  from, to{ transform: scale(1); }
+
+  50%{ transform: scale(1.5); }
+}
+
+
+
+.tableSec{
+  min-height: 50vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: no-drop;
+  /*cursor: url();*/
+}
+
+
+.tableSec .table,
+.tableSec .table *{
+  border: 1px solid #222;
+  max-width: 500px;
+  border-collapse: collapse;
+  /*border-spacing: 10px;*/
+  caption-side: bottom;
+  text-align: left;
+  vertical-align: baseline;
+  /*empty-cells: hide;*/
+}
+
+.tableSec td{
+  /*pointer-events: none;*/
+}
+
+
+.textEffects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #ff5;
+}
+
+.textEffects .box{
+  font-size: 30px;
+  border: 1px solid black;
+  width: 150px;
+  min-height: 150px;
+  /*overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;*/
+  /*word-wrap: break-word;
+  word-break: break-all;
+  writing-mode: vertical-lr;*/
+}
+
+
+.multiColumns{
+  padding: 100px;
+  min-height: 50vh;
+  background-color: #ffd;
+
+}
+
+.multiColumns .container{
+  column-count: 3;
+  column-rule: 1px solid black;
+  column-width: 300px;
+  column-gap: 100px;
+}
+
+.mediaQueries{
+  min-height: 50vh;
+  background-color: #ffd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+  .mediaQueries{
+    background-color: pink;
+  }
+}
+
+@media screen and (orientation: portrait){
+  .mediaQueries h1{
+    display: none;
+  }
+}
+
+@media screen and (device-aspect-ratio: 16/9) {
+  .mediaQueries{
+    background-color: aqua;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .mediaQueries{
+    background-color: yellow;
+  }
+}
+
+@media print and (min-resolution: 300dpi) {
+  .mediaQueries{
+    background-color: green;
+  }
+}
+
+@media print {
+  .mediaQueries{
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+
+.lastLsn{
+  background-color: lightgray;
+  margin: 0;
+  font-size: 24px;
+  font-family: consolas;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastLsn .container *{
+  margin: 10px;
+}
+
+/*PLACEHOLDER*/
+
+.placeholder::placeholder{
+  color: #d5f;
+  opacity: 1;
+}
+
+.placeholder::-ms-input-placeholder{
+  /*Edge*/
+  color: #d5f;
+}
+
+.placeholder:-ms-input-placeholder{
+  /*IE 10-11*/
+  color: #d5f;
+}
+
+::placeholder{
+  /* Chrome, Firefox, Opera, Safari 10.1+*/
+  color: blue;
+  opacity: 1; /*Firefox*/
+}
+
+::-ms-input-placeholder{
+  /*Edge*/
+  color: blue;
+}
+
+:-ms-input-placeholder{
+  /*IE 10-11*/
+  color: blue;
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar{
+  width: 25px;
+  background: #101124;
+}
+
+::-webkit-scrollbar-track{
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, #00ffa1, #0ff);
+  border-radius: 15px;
+}
+
+
+/*SPRITES*/
+
+.lastLsn button{
+  width: 200px;
+  height: 65px;
+  background-image: url(img/btn2.png);
+  background-position: top;
+  background-size: cover;
+  text-indent: -9999px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 1px solid grey;
+}
+
+.lastLsn button:hover{
+  background-position: center;
+}
+
+.lastLsn button:active{
+  background-position: bottom;
+}

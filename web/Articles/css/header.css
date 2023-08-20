@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  bottom: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(28,20,13,0.9);
+}
+
+body{
+  min-height: 150vh;
+  position: relative;
+  background: url(../img/lamp4.png) repeat fixed center center #f2e9e1;
+  padding-bottom: 500px;
+}
+
+body::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #1c140d;
+}
+
+header{
+  background-color: #1c140d;
+}
+
+
+
+.header-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link{
+  list-style: none;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  transition: 0.3s;
+  transition-property: background, letter-spacing, margin;
+}
+
+.nav-link:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.nav-link::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(203,232,107,1);
+  display: none;
+}
+
+.nav-link:hover::after{
+  display: block;
+}
+
+.nav-link a{
+  color: #f2e9e1;
+  text-decoration: none;
+  display: block;
+  padding: 30px 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-nav{
+    display: block;
+    text-align: center;
+  }
+
+  .article{
+    height: 410px;
+  }
+  .article .image{
+    max-height: 300px;
+  }
+}
