@@ -1,0 +1,33 @@
+n[first_mail]n
+
+t[WeCanClean h4[i[„Czysty start po remoncie - nasze specjalnością”]i]h4]t
+
+h2[Dzisiaj każda firma budowlana może sobie pozwolić na lśniącą czystość po remontach już za 6 zł/m2.]h2
+
+Nasza firma WeCanClean specjalizuje się w sprzątaniu i porządkowaniu placów budowy po pracach budowlanych lub remontowych.;
+Jeśli szukają Państwo rzetelnego i profesjonalnego partnera do specjalistycznego sprzątania po budowie i remoncie, firma sprzątająca WeCanClean jest dla Państwa idealnym rozwiązaniem.
+a[h4[Nasza najlepsza oferta cenowa dla firm budowlanych zaczyna się b[od 6 zł/m2]b przy przygotowaniu budynku o powierzchni b[500 m2]b lub większej. Mycie okien już b[od 4 zł/m2.]b]h4]a
+
+l[Do zadań wykonywanych przez naszą firmę należy:
+c[odkurzanie i mycie powierzchni,]c
+c[usuwanie kurzu i brudu z mebli, urządzeń i sprzętu]c
+c[mycie okien, drzwi i innych elementów szklanych,]c
+c[usuwanie plam i zabrudzeń z powierzchni ścian i podłóg,]c
+c[zbieranie i wywóz odpadów budowlanych.[c
+]l
+Dysponujemy odpowiednim profesjonalnym sprzętem i narzędziami, w tym odkurzaczami przemysłowymi, urządzeniami wysokociśnieniowymi, maszynami do mycia podłóg oraz specjalistycznymi środkami czyszczącymi i chemicznymi do każdej powierzchni.
+l[Nasz cennik sprzątania poremontowego mieszkań, domów i biur:
+c[b[puste mieszkanie / dom / biuro  6-10 zł/m2]b]c
+c[b[umeblowane mieszkanie / dom / biuro  9-14 zł/m2]b]c
+c[b[mycie okien po remontach - już od 40 zł.]b]c
+]l
+Zapewniamy pełną elastyczność i możliwość dostosowania się do potrzeb naszych klientów z indywidualną wyceną każdego zlecenia. Cena usługi zależy od wielkości pomieszczenia i stopnia jego zabrudzenia, co pozwala nam dopasować ofertę dokładnie do Państwa oczekiwań.;
+Jesteśmy oficjalnie zarejestrowaną firmą, co oznacza, że po zakończeniu prac wystawiamy fakturę.;
+Jeśli są Państwo zainteresowani naszymi usługami prosimy o kontakt. Chętnie odpowiemy na wszystkie pytania i przedstawimy szczegóły naszej oferty.
+
+p[p{https://m.me/Wecanclean.Clening.Service}p Messenger]p
+
+i[– Z poważaniem,\nZespół WeCanClean]i
+
+f[Sent by r[r{#}r WeCanClean]r , Poland, Warsaw;
+r[r{mailto:wecan.clean.pl@gmail.com}r wecan.clean.pl@gmail.com]r | r[r{tel:+48721314204}r+48721314204]r
