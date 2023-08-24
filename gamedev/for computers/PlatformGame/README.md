@@ -1,4 +1,4 @@
-Platform Game (Unfinished Game Development)
+Platform Game (Unfinished Game Development)\n
 It's 2D Pixel platform game with one level. 
 The game was developed by the team of developers. The team broke up and development stopped. Someday I will finish the project
 
